@@ -56,7 +56,7 @@ public class Login extends JFrame implements ActionListener{
         login.addActionListener(this);
         add(login);
         
-         clear = new JButton("CLEAR");
+        clear = new JButton("CLEAR");
         clear.setBounds(480,250,100,30);
         clear.setBackground(Color.cyan);
         clear.setForeground(Color.BLACK);
@@ -90,7 +90,9 @@ public class Login extends JFrame implements ActionListener{
                
            }
            else if (e.getSource() == signup){
-               
+               setVisible(false);
+               new SignupOne().setVisible(true);
+               System.out.println("This is here");
            }
     }
 }
